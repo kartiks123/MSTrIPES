@@ -1,0 +1,24 @@
+from tkinter import *
+
+MSTrIPES_root=Tk()
+
+MSTrIPES_root.maxsize(1366,768)
+
+MSTrIPES_root.title("MSTrIPES GUI") # Adding the Title here
+
+MSTrIPES_title_label=Label(text='''The wildlife and its habitat cannot speak, so we must and we will
+
+
+Taking the aforementioned forward, we have developed MSTrIPES. It refers to a tiger monitoring and patrolling system. 
+The mstripes system uses mobile technology and GPS tracking to monitor and protect tiger populations in the wild. 
+It allows field staff to record and transmit real-time data on tiger sightings, movement patterns, and habitat use, which can 
+then inform conservation strategies and track the effectiveness of conservation efforts.''',fg="white",padx=100,pady=100,font=("comicsansms",16,"bold"))
+
+MSTrIPES_title_label.pack(side=LEFT, fill=Y)
+
+# Image Section
+logo=PhotoImage(file="1.png")
+logo_label=Label(image=logo)
+logo_label.pack()
+
+MSTrIPES_root.mainloop()
